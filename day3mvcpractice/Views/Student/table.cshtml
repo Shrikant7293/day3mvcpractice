@@ -1,0 +1,34 @@
+﻿@model List<Student>
+
+	<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+
+			<table style="border:1px solid red">
+				<thead>
+			<tr>
+					<th>STUDENT ROLL.NO</th>
+					<th>STUDENT NAME</th>
+					<th>STUDENT CLASS</th>
+			</tr>
+				</thead>
+
+                <tbody>
+			@{
+				foreach(Student std in Model)
+				{
+					<tr>
+					<td>@std.rollno</td>
+					<td>@std.name</td>
+					<td>@std.clas</td>
+					</tr>
+				}
+			}
+				</tbody>
+			</table>
+
+			<a href="/Student/create">Create Student</a>
+		</body>
+	</html>

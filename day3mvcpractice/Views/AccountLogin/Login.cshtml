@@ -1,0 +1,17 @@
+﻿@model login
+
+<html>
+	<head>
+		<title>Login Bright Infotech</title>
+	</head>
+	<body>
+		<form method="post" asp-controller="AccountLogin" asp-action="Login">
+
+			USERID : <input type="text" name="userid" />
+			<br />
+		    PASSWORD : <input type="text" name="password" />
+			<br />
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>

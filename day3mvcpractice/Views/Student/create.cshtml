@@ -1,0 +1,19 @@
+﻿@model Student
+
+<html>
+	<head>
+		<title>Create Student </title>
+	</head>
+	<body>
+
+		<form method="post" asp-controller="Student" asp-action="create">
+	    STUDENT ROLL.NO    : <input type="text" asp-for="@Model.rollno" />
+		<br />
+		STUDENT NAME  : <input type="text" asp-for="@Model.name"/>
+		<br />
+		STUDENT CLASS : <input type="text" asp-for="@Model.clas"/>
+		<br />
+		<button style="margin:20px">Submit</button>
+	</form>
+	</body>
+</html>
